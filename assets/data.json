@@ -1,0 +1,25 @@
+{
+  "bootLines": [
+    "[ OK ] Initializing BIOS...",
+    "[ OK ] Checking system memory...",
+    "[ OK ] Mounting virtual drive...",
+    "[ OK ] Starting CTI engine...",
+    "[ OK ] Loading OritiOS shell...",
+    "[ OK ] Boot complete. Welcome.",
+    "[ERROR] You are not the Admin, you will be logged in as a limited guest user.",
+    "[ALERT] This is Vincenzo Oriti personal webpage for projects etc. <br> If you’ve left your hacker hat at home or just want to set your adventure level to 'easy', just type <b>startx</b> in the console below to load a normal website. Alas, just so you know, not all content will be available in noob-mode"
+  ],
+  "commands": {
+    "help": "Here are some of the available commands: about, talks, interviews, courses, publications, podcasts, contact, clear, startx, startY, autoopen",
+    "about": "EXAMPLE-TEXT",
+    "talks": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>",
+    "interviews": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>",
+    "courses": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>",
+    "publications": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>",
+    "podcasts": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>",
+    "contact": "<ul><li><a href='https://www.linkedin.com/in/vincenzo-oriti/' target='_blank'>LinkedIn</a></li><li><a href='https://github.com/VOriti' target='_blank'>GitHub</a></li><li><a href='mailto:vincenzo@oriti.net'>Email</a></li></ul>",
+    "clear": "__CLEAR__",
+    "startx": "<a href='LinkSito' target='_blank'>go to noob mode</a>",
+    "startY": "<a href='LinkSito' target='_blank'>go to noob mode</a>"
+  }
+}
