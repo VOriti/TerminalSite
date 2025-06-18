@@ -10,7 +10,7 @@ contenuto simulando un ambiente a riga di comando.
 - **JavaScript** per la logica del terminale interattivo definita in `index.html`.
 
 ## Licenza
-Il codice è distribuito con licenza **GPLv3** come indicato nel file `LICENSE`.
+Nel file `LICENSE` è indicato che il codice è distribuito con licenza **GPLv3** .
 Nel file `CREDITS` sono riportati i progetti da cui questo lavoro deriva.
 
 ## Visualizzazione in locale
