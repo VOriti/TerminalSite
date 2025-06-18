@@ -12,7 +12,7 @@
 </head>
 <body>
   
-  <div id="boot-screen" class="p-4 text-success" style="font-family: 'Fira Code', monospace;"></div>
+  <div id="boot-screen" class="p-4" style="font-family: 'Fira Code', monospace;"></div>
   <div id="terminal" class="container-fluid py-4 d-none">
     
     <div id="output"></div>
@@ -32,19 +32,27 @@
       "[ OK ] Checking system memory...",
       "[ OK ] Mounting virtual drive...",
       "[ OK ] Starting CTI engine...",
-      "[ OK ] Loading PietroOS shell...",
+      "[ OK ] Loading OritiOS shell...",
       "[ OK ] Boot complete. Welcome.",
-      "[ALERT] This is Vincenzo Oriti personal webpage for projects etc. <br> If you are a noob user just type startx for a normal website. but not all content will be aveilable in noob-mode"
+      "[ALERT] This is Vincenzo Oriti personal webpage for projects etc. <br> If you are a normal user just type <b>startx</b> to load a normal website. Sadly, not all contents will be available in noob-mode"
     ];
 
     let i = 0;
     function typeBoot() {
       if (i < bootLines.length) {
-        bootScreen.innerHTML += bootLines[i] + "<br/>";
+        const line = bootLines[i];
+        let colorClass = "";
+        if (line.startsWith("[ OK ]")) {
+          colorClass = "text-success";
+        } else if (line.startsWith("[ALERT]")) {
+          colorClass = "text-warning";
+        } else if (line.startsWith("[ERROR]")) {
+          colorClass = "text-danger";
+        }
+        bootScreen.innerHTML += `<span class="${colorClass}">${line}</span><br/>`;
         i++;
         setTimeout(typeBoot, 400);
       } else {
-        bootScreen.classList.add("d-none");
         terminal.classList.remove("d-none");
         document.getElementById("input").focus();
       }
