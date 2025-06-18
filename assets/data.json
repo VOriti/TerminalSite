@@ -10,16 +10,43 @@
     "[ALERT] This is Vincenzo Oriti personal webpage for projects etc. <br> If you’ve left your hacker hat at home or just want to set your adventure level to 'easy', just type <b>startx</b> in the console below to load a normal website. Alas, just so you know, not all content will be available in noob-mode"
   ],
   "commands": {
-    "help": "Here are some of the available commands: about, talks, interviews, courses, publications, podcasts, contact, clear, startx, startY, autoopen",
-    "about": "EXAMPLE-TEXT",
-    "talks": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>",
-    "interviews": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>",
-    "courses": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>",
-    "publications": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>",
-    "podcasts": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>",
-    "contact": "<ul><li><a href='https://www.linkedin.com/in/vincenzo-oriti/' target='_blank'>LinkedIn</a></li><li><a href='https://github.com/VOriti' target='_blank'>GitHub</a></li><li><a href='mailto:vincenzo@oriti.net'>Email</a></li></ul>",
-    "clear": "__CLEAR__",
-    "startx": "<a href='LinkSito' target='_blank'>go to noob mode</a>",
-    "startY": "<a href='LinkSito' target='_blank'>go to noob mode</a>"
+    "help": {
+      "response": "Here are some of the available commands: about, talks, interviews, courses, publications, podcasts, contact, clear, startx, startY",
+      "autoOpen": false
+    },
+    "about": { "response": "EXAMPLE-TEXT", "autoOpen": false },
+    "talks": {
+      "response": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>",
+      "autoOpen": false
+    },
+    "interviews": {
+      "response": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>",
+      "autoOpen": false
+    },
+    "courses": {
+      "response": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>",
+      "autoOpen": false
+    },
+    "publications": {
+      "response": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>",
+      "autoOpen": false
+    },
+    "podcasts": {
+      "response": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>",
+      "autoOpen": false
+    },
+    "contact": {
+      "response": "<ul><li><a href='https://www.linkedin.com/in/vincenzo-oriti/' target='_blank'>LinkedIn</a></li><li><a href='https://github.com/VOriti' target='_blank'>GitHub</a></li><li><a href='mailto:vincenzo@oriti.net'>Email</a></li></ul>",
+      "autoOpen": false
+    },
+    "clear": { "response": "__CLEAR__", "autoOpen": false },
+    "startx": {
+      "response": "<a href='LinkSito' target='_blank'>go to noob mode</a>",
+      "autoOpen": false
+    },
+    "startY": {
+      "response": "<a href='LinkSito' target='_blank'>go to noob mode</a>",
+      "autoOpen": true
+    }
   }
 }
