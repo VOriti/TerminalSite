@@ -11,7 +11,7 @@
   const data = await response.json();
   const bootLines = data.bootLines || [];
   const commands = data.commands || {};
-  let autoOpen = false;
+  let autoOpen = data.autoOpen || false;
 
   let i = 0;
   function typeBoot() {
@@ -51,14 +51,6 @@
       line.innerHTML = "<span class='prompt'>guest@oriti.net:~$</span> <span class='typed'>" + command + "</span>";
       outputDiv.appendChild(line);
 
-      if (command === "autoopen") {
-        autoOpen = !autoOpen;
-        const status = document.createElement("div");
-        status.className = "response";
-        status.innerText =
-          "Automatic link opening " + (autoOpen ? "enabled" : "disabled") + ".";
-        outputDiv.appendChild(status);
-      }
 
       if ((command === "startx" && autoOpen) || command === "startY") {
         window.open("LinkSito", "_blank");
