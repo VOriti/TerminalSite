@@ -11,7 +11,7 @@
   const data = await response.json();
   const bootLines = data.bootLines || [];
   const commands = data.commands || {};
-  let autoOpen = data.autoOpen || false;
+  const defaultAutoOpen = data.autoOpen ?? false;
 
   let i = 0;
   function typeBoot() {
@@ -52,14 +52,15 @@
       outputDiv.appendChild(line);
 
 
-      if ((command === "startx" && autoOpen) || command === "startY") {
+      const cmdData = commands[command];
+      if (cmdData && (cmdData.autoOpen ?? defaultAutoOpen)) {
         window.open("LinkSito", "_blank");
       }
 
       if (command === "clear") {
         outputDiv.innerHTML = "";
-      } else if (commands[command]) {
-        const response = commands[command];
+      } else if (cmdData) {
+        const response = cmdData.response;
         if (response !== "__CLEAR__") {
           const out = document.createElement("div");
           out.className = "response";
