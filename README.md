@@ -17,11 +17,14 @@ Il codice è distribuito con licenza **GPLv3** (vedi file `LICENSE`).
 I progetti da cui questo lavoro deriva sono elencati nel file `CREDITS`.
 
 ### Visualizzazione in locale
-Per vedere il sito in locale è sufficiente aprire il file `index.html` con il browser preferito:
+Per visualizzare correttamente il sito è necessario avviare un piccolo server HTTP.
+Ecco un esempio utilizzando Python 3:
 
 ```bash
-xdg-open index.html    # oppure aprirlo manualmente con il browser
+python3 -m http.server
 ```
+
+Una volta avviato, apri il browser all'indirizzo `http://localhost:8000`.
 
 ---
 
@@ -42,8 +45,11 @@ The code is distributed under the **GPLv3** license (see the `LICENSE` file).
 The projects from which this work is derived are listed in the `CREDITS` file.
 
 ### Local Preview
-To view the site locally, simply open `index.html` in your preferred browser:
+To preview the site, you need to run a small HTTP server first.
+Here is an example using Python 3:
 
 ```bash
-xdg-open index.html    # or open it manually with your browser
+python3 -m http.server
 ```
+
+After starting the server, open your browser at `http://localhost:8000`.
