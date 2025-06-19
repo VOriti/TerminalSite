@@ -73,7 +73,7 @@
         if (keyword) {
           const warn = document.createElement("div");
           warn.className = "response text-warning";
-          warn.innerText = keywordResponses[keyword];
+          warn.innerHTML = keywordResponses[keyword];
           outputDiv.appendChild(warn);
 
           const baseCommand = command.replace(keyword, "").trim();
