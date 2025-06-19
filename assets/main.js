@@ -11,6 +11,7 @@
   const data = await response.json();
   const bootLines = data.bootLines || [];
   const commands = data.commands || {};
+  const keywordResponses = data.keywordResponses || {};
   const defaultAutoOpen = data.autoOpen ?? false;
 
   let i = 0;
@@ -68,10 +69,41 @@
           outputDiv.appendChild(out);
         }
       } else {
-        const err = document.createElement("div");
-        err.className = "response text-danger";
-        err.innerText = "Command not found: " + command;
-        outputDiv.appendChild(err);
+        const keyword = Object.keys(keywordResponses).find(k => command.includes(k));
+        if (keyword) {
+          const warn = document.createElement("div");
+          warn.className = "response text-warning";
+          warn.innerText = keywordResponses[keyword];
+          outputDiv.appendChild(warn);
+
+          const baseCommand = command.replace(keyword, "").trim();
+          const baseData = commands[baseCommand];
+          if (baseData) {
+            if (baseData.autoOpen ?? defaultAutoOpen) {
+              window.open("LinkSito", "_blank");
+            }
+            if (baseCommand === "clear") {
+              outputDiv.innerHTML = "";
+            }
+            const resp = baseData.response;
+            if (resp !== "__CLEAR__") {
+              const out = document.createElement("div");
+              out.className = "response";
+              out.innerHTML = resp;
+              outputDiv.appendChild(out);
+            }
+          } else {
+            const err = document.createElement("div");
+            err.className = "response text-danger";
+            err.innerText = "Command not found: " + command;
+            outputDiv.appendChild(err);
+          }
+        } else {
+          const err = document.createElement("div");
+          err.className = "response text-danger";
+          err.innerText = "Command not found: " + command;
+          outputDiv.appendChild(err);
+        }
       }
 
       inputDiv.innerText = "";
