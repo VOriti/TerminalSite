@@ -14,6 +14,15 @@
   const keywordResponses = data.keywordResponses || {};
   const defaultAutoOpen = data.autoOpen ?? false;
 
+  function openLinkFromResponse(resp) {
+    const tmp = document.createElement('div');
+    tmp.innerHTML = resp;
+    const a = tmp.querySelector('a');
+    if (a && a.href) {
+      window.open(a.href, '_blank');
+    }
+  }
+
   let i = 0;
   function typeBoot() {
     if (i < bootLines.length) {
@@ -55,7 +64,7 @@
 
       const cmdData = commands[command];
       if (cmdData && (cmdData.autoOpen ?? defaultAutoOpen)) {
-        window.open("LinkSito", "_blank");
+        openLinkFromResponse(cmdData.response);
       }
 
       if (command === "clear") {
@@ -80,7 +89,7 @@
           const baseData = commands[baseCommand];
           if (baseData) {
             if (baseData.autoOpen ?? defaultAutoOpen) {
-              window.open("LinkSito", "_blank");
+              openLinkFromResponse(baseData.response);
             }
             if (baseCommand === "clear") {
               outputDiv.innerHTML = "";
