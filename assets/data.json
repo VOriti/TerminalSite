@@ -7,15 +7,18 @@
     "[ OK ] Loading OritiOS shell...",
     "[ OK ] Boot complete. Welcome.",
     "[ERROR] You are not the Admin, you will be logged in as a limited guest user.",
-    "[ALERT] This is Vincenzo Oriti personal webpage for projects etc. <br> If you've left your hacker hat at home or just want to set your adventure level to 'easy', just type <b>startx</b> in the console below to load a normal website. Alas, just so you know, not all content will be available in noob-mode"
+    "[ALERT] This is Vincenzo Oriti personal webpage for projects etc.<br>If you've left your hacker hat at home or just want to set your adventure level to 'easy', just type <b>startx</b> in the console below to load a normal website. Alas, just so you know, not all content will be available in noob-mode"
   ],
   "autoOpen": false,
   "commands": {
     "help": {
-      "response": "Here are some of the available commands: about, talks, interviews, courses, publications, podcasts, contact, clear, startx, startY"
+      "response": "Here are SOME of the available commands: whoami, get resume, contact, ls, startx, clear"
     },
-    "about": {
-      "response": "EXAMPLE-TEXT"
+    "whoami": {
+      "response": "Here is my presentation resume"
+    },
+    "ls": {
+      "response": " talks <br> interviews <br> courses <br> publications <br> podcasts"
     },
     "talks": {
       "response": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>"
@@ -34,6 +37,10 @@
     },
     "contact": {
       "response": "<ul><li><a href='https://www.linkedin.com/in/vincenzo-oriti/' target='_blank'>LinkedIn</a></li><li><a href='https://github.com/VOriti' target='_blank'>GitHub</a></li><li><a href='mailto:vincenzo@oriti.net'>Email</a></li></ul>"
+    },
+    "get resume": {
+      "response": "<a href='docs/Vincenzo-Oriti_Curriculum-Vitae.pdf' target='_blank'>Curriculum</a>",
+      "autoOpen": true
     },
     "clear": {
       "response": "__CLEAR__"
@@ -56,8 +63,8 @@
     }    
   },
   "keywordResponses": {
-    "sudo": "[ALERT] Sorry, but attempting to escalate to super-user privileges on someone else's system isn't exactly polite sysadmin etiquette! <br> [ALERT] Mi dispiace ma non dovresti cercare di ottenere privilegi da super-user su un sistema non tuo, non è educato",
-    "reboot": "[ALERT] Sorry, but this is not an actual Linux instance, just a funny script for my personal presentation page. If you want to clear the screen, just type clear <br> [ALERT] Mi dispiace ma questa non è una vera istanza Linux, ma solo uno script divertente per la mia pagina web personale. Se vuoi pulire lo schermo, digita clear"
+    "sudo": "[ALERT] Sorry, but attempting to escalate to super-user privileges on someone else's system isn't exactly polite sysadmin etiquette!<br>[ALERT] Mi dispiace ma non dovresti cercare di ottenere privilegi da super-user su un sistema non tuo, non è educato",
+    "reboot": "[ALERT] Sorry, but this is not an actual Linux instance, just a funny script for my personal presentation page. If you want to clear the screen, just type clear<br>[ALERT] Mi dispiace ma questa non è una vera istanza Linux, ma solo uno script divertente per la mia pagina web personale. Se vuoi pulire lo schermo, digita clear"
   }
 
 }
