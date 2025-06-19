@@ -7,7 +7,7 @@
     "[ OK ] Loading OritiOS shell...",
     "[ OK ] Boot complete. Welcome.",
     "[ERROR] You are not the Admin, you will be logged in as a limited guest user.",
-    "[ALERT] This is Vincenzo Oriti personal webpage for projects etc. <br> If you\u2019ve left your hacker hat at home or just want to set your adventure level to 'easy', just type <b>startx</b> in the console below to load a normal website. Alas, just so you know, not all content will be available in noob-mode"
+    "[ALERT] This is Vincenzo Oriti personal webpage for projects etc. <br> If you've left your hacker hat at home or just want to set your adventure level to 'easy', just type <b>startx</b> in the console below to load a normal website. Alas, just so you know, not all content will be available in noob-mode"
   ],
   "autoOpen": false,
   "commands": {
@@ -41,12 +41,23 @@
     "startx": {
       "response": "<a href='LinkSito' target='_blank'>go to noob mode</a>"
     },
-    "startY": {
+    "startx2": {
       "response": "<a href='LinkSito' target='_blank'>go to noob mode</a>",
       "autoOpen": true
-    }
+    },
+    "rm -rf /": {
+      "response": "Dai su non scherziamo, questo è troppo anche per gli standard della OffSec, e questo è solo uno script divertente, non una vera istanza Linux"
+    },
+    "format C:": {
+      "response": "We are on Linux my friend, try something less vintage"
+    },
+    "su": {
+      "response": "Ti piacerebbe! Mi occupo di cybersecurity: il root access te lo devi meritare.<br>I'm into cybersecurity: root access is not for everyone, you have to deserve it. And you do not."
+    }    
   },
   "keywordResponses": {
-    "sudo": "[ALERT] Mi dispiace ma non dovresti cercare di ottenere privilegi da super-user su un sistema non tuo, non è educato"
+    "sudo": "[ALERT] Sorry, but attempting to escalate to super-user privileges on someone else's system isn't exactly polite sysadmin etiquette! <br> [ALERT] Mi dispiace ma non dovresti cercare di ottenere privilegi da super-user su un sistema non tuo, non è educato",
+    "reboot": "[ALERT] Sorry, but this is not an actual Linux instance, just a funny script for my personal presentation page. If you want to clear the screen, just type clear <br> [ALERT] Mi dispiace ma questa non è una vera istanza Linux, ma solo uno script divertente per la mia pagina web personale. Se vuoi pulire lo schermo, digita clear"
   }
+
 }
