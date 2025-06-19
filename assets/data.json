@@ -45,5 +45,8 @@
       "response": "<a href='LinkSito' target='_blank'>go to noob mode</a>",
       "autoOpen": true
     }
+  },
+  "keywordResponses": {
+    "sudo": "mi dispiace ma non dovresti cercare di ottenere privilegi da super-user su un sistema non tuo, non è educato"
   }
 }
