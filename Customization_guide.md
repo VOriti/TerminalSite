@@ -1,8 +1,8 @@
-# Guida alla Personalizzazione di TerminalSite
+# Guida alla Personalizzazione di TerminalSite <a name="it"></a>
 
-*(English below)*
+*([English version below](#en))*
 
-## Struttura del progetto
+# Struttura del progetto
 
 TerminalSite è composto da pochi file essenziali, facilmente modificabili:
 
@@ -10,8 +10,12 @@ TerminalSite è composto da pochi file essenziali, facilmente modificabili:
 - `assets/main.js`: gestione logica del terminale.
 - `assets/data.json`: testi mostrati (messaggi iniziali, comandi, risposte).
 - `assets/style.css`: colori e stili grafici.
+- `docs/`: cartella dove caricare i file scaricabili (curriculum, attestati, ecc.)
 - `robots.txt` e `sitemap.xml`: indicazioni per i motori di ricerca.
+- `startx.html`: versione GUI del sito.
 - `README.md`, `CREDITS`, `LICENSE`: informazioni aggiuntive sul progetto.
+
+# Modifica questi file
 
 Per modificare questi file è sufficiente usare un qualsiasi editor di testo.
 
@@ -120,9 +124,11 @@ Una volta avviato, apri il browser all'indirizzo `http://localhost:8000`.
 
 ---
 
-# TerminalSite Customization Guide
+# TerminalSite Customization Guide <a name="en"></a>
 
-## Project Structure
+*([Versione italiana sopra](#it))*
+
+# Project Structure
 
 TerminalSite includes a few essential files, easily customizable:
 
@@ -130,10 +136,14 @@ TerminalSite includes a few essential files, easily customizable:
 - `assets/main.js`: terminal logic.
 - `assets/data.json`: displayed texts (boot messages, commands, responses).
 - `assets/style.css`: colors and visual styles.
+- `docs/`: folder for downloadable files (resume, certificates, etc.).
 - `robots.txt` and `sitemap.xml`: search engine guidelines.
+- `startx.html`: GUI version of the site.
 - `README.md`, `CREDITS`, `LICENSE`: additional project information.
 
-Modify these files using any text editor.
+# Modify 
+
+You can modify these files using any text editor.
 
 ## Change Username in the Prompt
 

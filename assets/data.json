@@ -7,64 +7,71 @@
     "[ OK ] Loading OritiOS shell...",
     "[ OK ] Boot complete. Welcome.",
     "[ERROR] You are not the Admin, you will be logged in as a limited guest user.",
-    "[ALERT] This is Vincenzo Oriti personal webpage for projects etc.<br>If you've left your hacker hat at home or just want to set your adventure level to 'easy', just type <b>startx</b> in the console below to load a normal website. Alas, just so you know, not all content will be available in noob-mode"
+    "[ALERT] This is Vincenzo Oriti personal webpage for resume, projects etc.<br>If you've left your hacker hat at home or just want to set your adventure level to 'easy', just type <b>startx</b> in the console below to load a normal website. <br>Alas, just so you know, not all content will be available in noob-mode, especially the fun stuff."
   ],
   "autoOpen": false,
   "commands": {
     "help": {
-      "response": "Here are SOME of the available commands: whoami, get resume, contact, ls, startx, clear"
+      "response": "Here are SOME of the available commands: whoami, get resume, credentials, interests, publications, contact, ls, startx, clear, history -c, reboot, matrix, su. <br>Try them out! (hint: not all commands are listed here, discover the hidden ones by exploring and experimenting!)"
     },
     "whoami": {
-      "response": "Here is my presentation resume"
+      "response": "insert personal description here"
     },
     "ls": {
-      "response": " talks <br> interviews <br> courses <br> publications <br> podcasts"
-    },
-    "talks": {
-      "response": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>"
-    },
-    "interviews": {
-      "response": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>"
-    },
-    "courses": {
-      "response": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>"
+      "response": "whoami <br> talks (disabled) <br> interviews <br> courses <br> publications <br> podcasts <br> contact <br> get resume"
     },
     "publications": {
-      "response": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>"
+      "response": "<ul><li><a href='https://orcid.org/XXXXXXXXXXXXXXXXXXXXXX' target='_blank'>ORCiD</a></li></ul>"
     },
-    "podcasts": {
-      "response": "<ul><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li><li><a href='https://EXAMPLE-LINK' target='_blank'>example link</a></li></ul>"
-    },
+    "credentials": {
+      "response": "<ul><li>elemento 1</li><li>elemento 2</li></ul>"    },
     "contact": {
-      "response": "<ul><li><a href='https://www.linkedin.com/in/vincenzo-oriti/' target='_blank'>LinkedIn</a></li><li><a href='https://github.com/VOriti' target='_blank'>GitHub</a></li><li><a href='mailto:vincenzo@oriti.net'>Email</a></li></ul>"
+      "response": "<ul><li><a href='https://www.linkedin.com/######' target='_blank'>LinkedIn</a></li><li><a href='https://github.com/######' target='_blank'>GitHub</a><li><a href='https://www.instagram.com/########' target='_blank'>Instagram</a></li><li><a href='mailto:XXXXXX@XXXX.com'>Work email</a></li><li><a href='mailto:XXXXXXXXX@gmail.com'>Personal email</a></li></ul>"
     },
     "get resume": {
-      "response": "<a href='docs/Vincenzo-Oriti_Curriculum-Vitae.pdf' target='_blank'>Curriculum</a>",
+      "response": "<a href='docs/Curriculum-Vitae.pdf' target='_blank'>Curriculum</a>",
       "autoOpen": true
+    },
+    "interviews": {
+      "response": "<ul><li>elemento 1</li><li>elemento 2</li></ul>"
+    },
+    "courses": {
+      "response": "<ul><li>elemento 1</li><li>elemento 2</li></ul>"
+    },
+    "podcasts": {
+      "response": "<ul><li>elemento 1</li><li>elemento 2</li></ul>"
+    },
+    "interests": {
+      "response": "<ul><li>elemento 1</li><li>elemento 2</li></ul>"
     },
     "clear": {
       "response": "__CLEAR__"
     },
-    "startx": {
-      "response": "<a href='LinkSito' target='_blank'>go to noob mode</a>"
+    "history -c": {
+      "response": "__HISTORY_CLEAR__"
     },
-    "startx2": {
-      "response": "<a href='LinkSito' target='_blank'>go to noob mode</a>",
-      "autoOpen": true
+    "reboot": {
+      "response": "__REBOOT__"
+    },
+    "matrix": {
+      "response": "__MATRIX__"
+    },
+    "startx": {
+      "response": "<a href='startx.html'>go to noob mode</a>"
     },
     "rm -rf /": {
-      "response": "Dai su non scherziamo, questo è troppo anche per gli standard della OffSec, e questo è solo uno script divertente, non una vera istanza Linux"
+      "response": "You are not funny"
     },
     "format C:": {
       "response": "We are on Linux my friend, try something less vintage"
     },
     "su": {
-      "response": "Ti piacerebbe! Mi occupo di cybersecurity: il root access te lo devi meritare.<br>I'm into cybersecurity: root access is not for everyone, you have to deserve it. And you do not."
+      "response": "Root access is not for everyone, you have to deserve it. And you do not."
     }    
   },
   "keywordResponses": {
-    "sudo": "[ALERT] Sorry, but attempting to escalate to super-user privileges on someone else's system isn't exactly polite sysadmin etiquette!<br>[ALERT] Mi dispiace ma non dovresti cercare di ottenere privilegi da super-user su un sistema non tuo, non è educato",
-    "reboot": "[ALERT] Sorry, but this is not an actual Linux instance, just a funny script for my personal presentation page. If you want to clear the screen, just type clear<br>[ALERT] Mi dispiace ma questa non è una vera istanza Linux, ma solo uno script divertente per la mia pagina web personale. Se vuoi pulire lo schermo, digita clear"
+    "sudo": "[ALERT] Sorry, but attempting to escalate to super-user privileges on someone else's system isn't exactly polite sysadmin etiquette!",
+    "rm": "[ALERT] Be careful with that command!"
   }
 
 }
